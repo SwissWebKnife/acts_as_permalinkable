@@ -7,22 +7,28 @@
 
 To generate parameterized string from `title` column to `slug` column before validation:
 
-    class Post < ActiveRecord::Base
-      acts_as_permalinkable :title, :slug
-    end
+```ruby
+class Post < ActiveRecord::Base
+  acts_as_permalinkable :title, :slug
+end
+```
 
 You probably want to change the way finding the record using `find_by`:
 
-    def set_post
-      @post = Post.find_by(slug: params[:id])
-    end
+```ruby
+def set_post
+  @post = Post.find_by(slug: params[:id])
+end
+```
 
 If there are both `name` and `permalink` columns, simplly write:
 
-    class Post < ActiveRecord::Base
-      acts_as_permalinkable
-      # same as `acts_as_permalinkable :name, :permalink`
-    end
+```ruby
+class Post < ActiveRecord::Base
+  acts_as_permalinkable
+  # same as `acts_as_permalinkable :name, :permalink`
+end
+```
 
 # What does it do?
 
