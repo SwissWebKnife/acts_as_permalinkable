@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ActsAsPermalinkable::VERSION
   s.authors     = ["Jian Weihang"]
   s.email       = ["tonytonyjan@gmail.com"]
-  s.homepage    = "tonytonyjan.net"
+  s.homepage    = "http://tonytonyjan.net"
   s.summary     = "A Rails plugin to genrate permalink automatically."
   s.description = "A Rails plugin to genrate, validates permalink automatically."
   s.license     = "MIT"
